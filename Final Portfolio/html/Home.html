@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/nav-footer.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+            <img src="./img/logo.png" alt="" width="50px" height="50px">
+        </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="./Projects.html">Projects</a></li>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <section id="hero">
+        <a href="https://wa.me/7977621658"class="whatsapp" target="_blank"> <img src="./img/whatsapp.png" alt="" width="50px" height="50px"></a>
+        <div class="hero-content">
+            <h1 class="top-heading"><span class="wraped"><span style="transform: rotateX(0deg) translate(0px, 0px); opacity: 1;">Not</span></span> <span class="wraped"><span style="transform: rotateX(0deg) translate(0px, 0px); opacity: 1;">Your</span></span><br><span class="wraped"><span style="transform: rotateX(0deg) translate(0px, 0px); opacity: 1;">Average</span></span><br><span class="wraped"><span style="transform: rotateX(0deg) translate(0px, 0px); opacity: 1;">Full Stack</span></span><br><span class="wraped"><span style="transform: rotateX(0deg) translate(0px, 0px); opacity: 1;">Developer</span></span></h1>
+            <p>Discover my work and projects</p>
+            <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <a href="./About.html"><span class="button-text">Learn More</span></a>
+              </button>
+        </div>
+    </section>
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+    <script src="/Js/Hamburger.JS"></script>
+</body>
+</html>
